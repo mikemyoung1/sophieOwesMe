@@ -22,4 +22,5 @@ angular.module('sophieYoungPortfolioApp')
     {image:'../images/NEW-PORTFOLIO-78.jpg' },
     {image:'../images/NEW-PORTFOLIO-79.jpg' }
     ];
+
   });
