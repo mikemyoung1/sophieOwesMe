@@ -1,6 +1,11 @@
 <carousel interval="myInterval" ng-mouseenter="play()" ng-mouseleave="play()">
   <slide ng-repeat="slide in slides" active="slide.active">
-    <img ng-src="{{slide.image}}" class="fullscreen-image">
+    <div ng-show="slide.link">
+      <a href="{{slide.link}}"><img ng-src="{{slide.image}}" class="fullscreen-image"></a>
+    </div>
+    <div ng-hide="slide.link">
+      <img ng-src="{{slide.image}}" class="fullscreen-image">
+    </div>
     <div class="carousel-caption">
       <h2><a href="{{slide.link}}">{{slide.text}}</a></h2>
     </div>
