@@ -1,13 +1,15 @@
-<carousel interval="myInterval" ng-mouseenter="play()" ng-mouseleave="play()">
+<carousel interval="myInterval" ng-mouseenter="play()">
   <slide ng-repeat="slide in slides" active="slide.active">
     <div ng-show="slide.link">
-      <a href="{{slide.link}}"><img ng-src="{{slide.image}}" class="fullscreen-image"></a>
+      <a href="{{slide.link}}" target="_blank"><img ng-src="{{slide.image}}" class="fullscreen-image"></a>
     </div>
     <div ng-hide="slide.link">
       <img ng-src="{{slide.image}}" class="fullscreen-image">
     </div>
     <div class="carousel-caption">
-      <h2><a href="{{slide.link}}">{{slide.text}}</a></h2>
+      <h2><a href="{{slide.link}}" target="_blank">{{slide.text}}</a></h2>
     </div>
   </slide>
 </carousel>
+<!--     <div class="btn btn-success" style="position:absolute; bottom: 100px; left: 100px; display: block; height: 100px; width: 100px; z-index: 5;" ng-click="play()">PLAY</div>
+    <div style="position:absolute; bottom: -200px; left: 100px" ng-mouseenter="pause()" ng-click="pause()">PAUSE</div> -->

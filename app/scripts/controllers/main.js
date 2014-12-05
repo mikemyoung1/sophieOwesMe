@@ -2,7 +2,7 @@
 
 angular.module('sophieYoungPortfolioApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.myInterval = 3000;
+    $scope.myInterval = 5000;
     $scope.slides = [
     {image:'../images/NEW-PORTFOLIO-1.jpg'},
     {image:'../images/NEW-PORTFOLIO-2.jpg' },
@@ -24,10 +24,12 @@ angular.module('sophieYoungPortfolioApp')
     {image:'../images/NEW-PORTFOLIO-18.jpg' }
     ];
 
-    $('#playButton').click(function () {
-      $('#homeCarousel').carousel('cycle');
-    });
-    $('#pauseButton').click(function () {
-      $('#homeCarousel').carousel('pause');
-    });
+    // $('#playButton').click(function () {
+    //   $('#homeCarousel').carousel('play');
+    // });
+
+    // $('#pauseButton').click(function () {
+    //   $('#homeCarousel').carousel('pause');
+    // });
+
   });
